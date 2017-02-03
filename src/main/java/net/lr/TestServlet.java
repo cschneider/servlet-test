@@ -14,8 +14,9 @@ import org.osgi.service.component.annotations.Component;
 		immediate = true, //
 		property = //
 		{ //
-				"alias=/test", //
-				"osgi.http.whiteboard.servlet.pattern=/test" //
+				//"alias=/test", //
+				"osgi.http.whiteboard.servlet.pattern=/test", //
+				"urlPatterns=/test"
 		})
 public class TestServlet extends HttpServlet {
 
